@@ -8,6 +8,11 @@ public class HarmonicValue
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter the Nth Harmonic value=");
 		int value=sc.nextInt();
+		while(value<0)
+			{
+			System.out.print("Enter a positive value=");
+			value=sc.nextInt();	
+			}
 		System.out.println("value="+value);
 		for(i=1;i<=value;i++)
 		{
